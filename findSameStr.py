@@ -16,7 +16,8 @@ handle.close()
 
 for i in range(len(name)):
     nstr=name[i]
-    namedic[name[i]]=name.count(name[i])
+    if namedic.haskey==false:
+        namedic[name[i]]=name.count(name[i])
 
 for item,value in namedic.items():
     print '%s,%s' %(item,value)
